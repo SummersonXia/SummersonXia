@@ -1,0 +1,405 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1270</width>
+    <height>863</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+    <horstretch>1</horstretch>
+    <verstretch>1</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="font">
+   <font>
+    <family>Agency FB</family>
+    <pointsize>9</pointsize>
+    <weight>75</weight>
+    <bold>true</bold>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>SenseAuto Cabin Smart Test Tool</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>icon/捕获.PNG</normaloff>icon/捕获.PNG</iconset>
+  </property>
+  <property name="windowOpacity">
+   <double>1.000000000000000</double>
+  </property>
+  <property name="autoFillBackground">
+   <bool>true</bool>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <property name="iconSize">
+   <size>
+    <width>256</width>
+    <height>256</height>
+   </size>
+  </property>
+  <property name="animated">
+   <bool>true</bool>
+  </property>
+  <property name="tabShape">
+   <enum>QTabWidget::Triangular</enum>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <layout class="QGridLayout" name="gridLayout_2">
+      <item row="0" column="0" rowspan="3" colspan="2">
+       <layout class="QGridLayout" name="gridLayout">
+        <item row="2" column="1" rowspan="3">
+         <widget class="QTreeWidget" name="treeWidget_functions">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+            <horstretch>1</horstretch>
+            <verstretch>1</verstretch>
+           </sizepolicy>
+          </property>
+          <column>
+           <property name="text">
+            <string>Functions</string>
+           </property>
+          </column>
+          <item>
+           <property name="text">
+            <string>DMS</string>
+           </property>
+           <item>
+            <property name="text">
+             <string>FACEID</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Drowsiness</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>GAZEAOI</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Distraction</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>DMS Action</string>
+            </property>
+           </item>
+          </item>
+          <item>
+           <property name="text">
+            <string>OMS</string>
+           </property>
+           <item>
+            <property name="text">
+             <string>OMS Action</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Gender</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Age</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Emotion</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Child</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>PA</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Safety Seat</string>
+            </property>
+           </item>
+          </item>
+          <item>
+           <property name="text">
+            <string>GES</string>
+           </property>
+           <item>
+            <property name="text">
+             <string>Static</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Dynamic</string>
+            </property>
+           </item>
+          </item>
+         </widget>
+        </item>
+        <item row="4" column="2" colspan="4">
+         <widget class="QTextBrowser" name="Dialog_textBrowser">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+            <horstretch>1</horstretch>
+            <verstretch>1</verstretch>
+           </sizepolicy>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="2" rowspan="4" colspan="4">
+         <widget class="QTabWidget" name="tabWidget">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+            <horstretch>1</horstretch>
+            <verstretch>1</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="styleSheet">
+           <string notr="true"/>
+          </property>
+          <property name="tabShape">
+           <enum>QTabWidget::Rounded</enum>
+          </property>
+          <property name="tabsClosable">
+           <bool>true</bool>
+          </property>
+          <property name="movable">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="1" rowspan="2">
+         <widget class="QTreeView" name="treeView"/>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QToolBar" name="toolBar">
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1270</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuGT">
+    <property name="title">
+     <string>GT生成</string>
+    </property>
+    <addaction name="action_Functions_GT"/>
+    <addaction name="actionGenerate_GT"/>
+   </widget>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>文件</string>
+    </property>
+    <addaction name="actionSSH"/>
+    <addaction name="actionNew_Project"/>
+    <addaction name="actionOpen_Project"/>
+    <addaction name="actionExit"/>
+    <addaction name="actionHelp"/>
+   </widget>
+   <widget class="QMenu" name="menu_2">
+    <property name="title">
+     <string>脚本运行</string>
+    </property>
+    <addaction name="action_Functions_script"/>
+    <addaction name="actionRun_Script"/>
+    <addaction name="actionMCU_Connection_Settings"/>
+   </widget>
+   <widget class="QMenu" name="menu_3">
+    <property name="title">
+     <string>log分析</string>
+    </property>
+    <addaction name="action_Functions_log"/>
+    <addaction name="actionlog_analysis"/>
+   </widget>
+   <widget class="QMenu" name="menu_display">
+    <property name="title">
+     <string>统计与显示</string>
+    </property>
+    <addaction name="action_Functions_statistics"/>
+    <addaction name="action_runanalysis"/>
+    <addaction name="action_openfile"/>
+    <addaction name="action_savefile"/>
+   </widget>
+   <addaction name="menu"/>
+   <addaction name="menuGT"/>
+   <addaction name="menu_2"/>
+   <addaction name="menu_3"/>
+   <addaction name="menu_display"/>
+  </widget>
+  <action name="actionSSH">
+   <property name="text">
+    <string>SSH</string>
+   </property>
+  </action>
+  <action name="actionlog_analysis">
+   <property name="text">
+    <string>Analyze Log</string>
+   </property>
+  </action>
+  <action name="actionStatic_Gesture">
+   <property name="text">
+    <string>Static Gesture</string>
+   </property>
+  </action>
+  <action name="actionDynamic_Gesture">
+   <property name="text">
+    <string>Dynamic Gesture</string>
+   </property>
+  </action>
+  <action name="actionChild_Detection">
+   <property name="text">
+    <string>OMS Child</string>
+   </property>
+  </action>
+  <action name="actionOMS_Action">
+   <property name="text">
+    <string>OMS Action</string>
+   </property>
+  </action>
+  <action name="actionOMS_Safety_Belt">
+   <property name="text">
+    <string>OMS Safety Belt</string>
+   </property>
+  </action>
+  <action name="actionOMS_PA">
+   <property name="text">
+    <string>OMS PA</string>
+   </property>
+  </action>
+  <action name="actionOMS_Attribute">
+   <property name="text">
+    <string>OMS Attribute</string>
+   </property>
+  </action>
+  <action name="actionFACE_ID">
+   <property name="text">
+    <string>DMS FACEID</string>
+   </property>
+  </action>
+  <action name="actionDMS_Action">
+   <property name="text">
+    <string>DMS Action</string>
+   </property>
+  </action>
+  <action name="actionDMS_GAZEAOI">
+   <property name="text">
+    <string>DMS GAZEAOI</string>
+   </property>
+  </action>
+  <action name="action_runanalysis">
+   <property name="text">
+    <string>Run Analysis</string>
+   </property>
+  </action>
+  <action name="action_openfile">
+   <property name="text">
+    <string>Open File</string>
+   </property>
+  </action>
+  <action name="action_savefile">
+   <property name="text">
+    <string>Save File</string>
+   </property>
+  </action>
+  <action name="actionNew_Project">
+   <property name="text">
+    <string>New Project</string>
+   </property>
+  </action>
+  <action name="action_Functions_statistics">
+   <property name="text">
+    <string>Functoins</string>
+   </property>
+  </action>
+  <action name="actionOpen_Project">
+   <property name="text">
+    <string>Open Project</string>
+   </property>
+  </action>
+  <action name="actionExit">
+   <property name="text">
+    <string>Exit</string>
+   </property>
+  </action>
+  <action name="actionHelp">
+   <property name="text">
+    <string>Help</string>
+   </property>
+  </action>
+  <action name="action_Functions_GT">
+   <property name="text">
+    <string>Functions</string>
+   </property>
+  </action>
+  <action name="action_Functions_log">
+   <property name="text">
+    <string>Functions</string>
+   </property>
+  </action>
+  <action name="action_Functions_script">
+   <property name="text">
+    <string>Functions</string>
+   </property>
+  </action>
+  <action name="actionRun_Script">
+   <property name="text">
+    <string>Run Script</string>
+   </property>
+  </action>
+  <action name="actionGenerate_GT">
+   <property name="text">
+    <string>Generate GT</string>
+   </property>
+  </action>
+  <action name="actionMCU_Connection_Settings">
+   <property name="text">
+    <string>MCU Connection Settings</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="icon/senseauto_2.qrc"/>
+ </resources>
+ <connections/>
+</ui>
